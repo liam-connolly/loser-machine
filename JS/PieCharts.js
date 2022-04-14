@@ -4,19 +4,20 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
-      ['Work',     11],
-      ['Eat',      2],
-      ['Commute',  2],
-      ['Watch TV', 2],
-      ['Sleep',    7]
+      ['Group', 'Wins'],
+      ['Teams with a win',     217],
+      ['Teams with no win',      82]
     ]);
 
     var options = {
-        title: 'My Daily Activities'
+        title: 'My Daily Activities',
+        width: 900,
+        height: 500,
+        colors: ['#008000', '#ff0000']
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
     chart.draw(data, options);
+
 }
