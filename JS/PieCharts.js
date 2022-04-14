@@ -10,7 +10,6 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'My Daily Activities',
         width: 900,
         height: 500,
         colors: ['#008000', '#ff0000'],
