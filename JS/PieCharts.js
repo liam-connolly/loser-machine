@@ -13,7 +13,9 @@ function drawChart() {
         title: 'My Daily Activities',
         width: 900,
         height: 500,
-        colors: ['#008000', '#ff0000']
+        colors: ['#008000', '#ff0000'],
+        pieSliceText: 'label',
+        legend: 'none'
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
